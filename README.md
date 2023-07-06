@@ -1,15 +1,21 @@
 # DS389-Script
-Simple script for DS389 
+Simple script for OpenLdap --> 389 Directory Server (DS389) migration 
 
-This simple Python script, allows you to build the new sssd.conf file needed for DS389 in your VM.
+In DS389 the list of users and/or groups to be authorized must be specified in the /etc/sssd.conf file
+Since the syntax is a bit complex, we provide a simple Python script, which allows to build the sssd.conf file accoding to your needs
 
-Are needed two files, in your directory, that is:
-- for users "users_ldap"
-- for groups "groups_ldap"
+The script needs:
+- a file (users_ldap) where to specify the list of authorized users an/or
+- a file (groups_ldap) where to specify the list of authorized groups
 
-when you use the script please you include the path where files are located  as parameter, for example:
+Examples of how to fill these 2 files are provided
+
+
+
+When you use the script, you simply need to specify the directory where these are located, e.g.:
 
 python python_ds389.py /root
 
+The script will customize the sssd.conf file accordingly
 
 
