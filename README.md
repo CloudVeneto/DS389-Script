@@ -18,4 +18,8 @@ python python_ds389.py /root
 
 The script will customize the sssd.conf file accordingly
 
+Then you need to restart the sssd service to implement the change:
+
+systemctl restart sssd
+
 
