@@ -1,7 +1,9 @@
 # DS389-Script
 Simple script for OpenLdap --> 389 Directory Server (DS389) migration 
 
-In DS389 the list of users and/or groups to be authorized must be specified in the /etc/sssd.conf file
+
+In DS389 the list of users and/or groups to be authorized must be specified in the /etc/sssd.conf file.
+
 Since the syntax is a bit complex, we provide a simple Python script, which allows to build the sssd.conf file accoding to your needs
 
 The script needs:
